@@ -8,13 +8,14 @@ MAIN = main.o
 
 all: $(NAME)
 	$(CC) $(FLAGS) $(MAIN) $(NAME) -o main
+	@echo "compile completed."
 $(NAME):$(OBJ)
 	@ar -rcs $(NAME) $(OBJ)
 	@ranlib $(NAME)
 
 
 clean:
-	rm -rf *.o
+	@rm -rf *.o
 fclean:
 	@rm -rf *.o
 	@rm -rf main

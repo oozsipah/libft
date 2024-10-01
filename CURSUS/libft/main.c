@@ -3,8 +3,9 @@
 
 int	main(void)
 {
-	char *src = "Merhaba Dünya! Dünya Güzel.";
+	char *src = "Merhaba Dün ya! Dün ya Güzel.";
 	char *dest = "Dünya";
+	int c = 0;
 	// ft_putchar('A');
 	// printf("\n%s\n", ft_strcat(s2, s1));
 	// printf("%d\n", ft_strcmp(s2, s1));
@@ -18,7 +19,11 @@ int	main(void)
 	// printf("%s\n", ft_strlcat(dest, src, 12));
 	// printf("%s\n", ft_strchr(src, dest));
 	// printf("%s\n", ft_strrchr(src, dest));
-	printf("%s\n", ft_strstr(src, dest));
+	// printf("%c", ft_isalpha(c));
+	// printf("%d", ft_isdigit(c));
+	// printf("%d", ft_isalnum(c));
+	// printf("%d", ft_isascii(c));
+	printf("%d", ft_isprint(c));
 
 	return (0);
 }

@@ -7,17 +7,18 @@ char    *ft_strstr(char *str, char *dest)
 
     j = 0;
     i = 0;
+    if (dest[i] == '\0')
+        return (&str[i]);
     while (str[i])
     {
-        while (str[i + j] == dest[j])
+        while ((str[i + j] == dest[j]) || (dest[j] == '\0'))
         {
-            if(str[i + j] == dest[j])
-            {
-                j++;
-            }
+            if(dest[j] == '\0')
+                return (&str[i]);
+            j++;
         }
         i++;
         j = 0;
     }
-    return (&str[i]);
+    return (NULL);
 }

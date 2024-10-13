@@ -1,10 +1,13 @@
 #ifndef LIBFT_H
 #define LIBFT_H
 
+#include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
 
 void	ft_putchar(char c);
+void    *ft_memset(void *b, int c, size_t len);
+void    *ft_bzero(void *b, size_t len);
 int	ft_strlen(char *str);
 int ft_strcmp(char *s1, char *s2);
 int ft_strncmp(char *s1, char *s2, unsigned int n);

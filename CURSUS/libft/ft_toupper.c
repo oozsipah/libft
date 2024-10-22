@@ -1,27 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: omerozsipahi <omerozsipahi@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/21 23:54:18 by omerozsipah       #+#    #+#             */
-/*   Updated: 2024/10/21 23:54:19 by omerozsipah      ###   ########.fr       */
+/*   Created: 2024/10/21 23:37:15 by omerozsipah       #+#    #+#             */
+/*   Updated: 2024/10/21 23:37:16 by omerozsipah      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-char    *ft_strrchr(const char *s, int c)
+int ft_toupper(int c)
 {
-    size_t i;
-
-    i = ft_strlen(s);
-    while (s[i - 1])
-    {
-        if (s[i] == c)
-            return ((char *)&s[i]);
-        i--;
-    }
-    return (NULL);
+    return (c - 32);
 }

@@ -22,5 +22,9 @@ int ft_atoi(char *str)
         result = (str[i] - 48) + (result * 10);
         i++;
     }
+    if (result > 2147483647)
+        return (-1);
+    if(result < -2147483648)
+        return (0);    
     return result;
 }

@@ -1,15 +1,27 @@
-#include "libft.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: omerozsipahi <omerozsipahi@student.42.f    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/21 12:42:20 by omerozsipah       #+#    #+#             */
+/*   Updated: 2024/10/21 12:49:55 by omerozsipah      ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-char    *ft_strchr(const char *str, int a)
+#include <stddef.h>
+
+char    *ft_strchr(const char *s, int c)
 {
-    char    c;
     int i;
 
     i = 0;
-    c = a;
-    while (str[i] != c)
+    while (s[i])
+    {
+        if (s[i] == c)
+            return ((char *)&s[i]);
         i++;
-    if (str[i] != c)
-        return (NULL);
-    return ((char *)&str[i]);
+    }
+    return (NULL);
 }

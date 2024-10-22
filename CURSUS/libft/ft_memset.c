@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: omerozsipahi <omerozsipahi@student.42.f    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/22 17:17:03 by omerozsipah       #+#    #+#             */
+/*   Updated: 2024/10/22 17:17:04 by omerozsipah      ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 
@@ -15,20 +27,4 @@ void    *ft_memset(void *b, int c, size_t len)
         i++;
     }
     return (a);
-}
-
-int main(void)
-{
-    char b[] = "omer ozsipahi";
-    size_t len = 5;
-    int c = 97;
-    unsigned char *a;
-    int i = 0;
-
-    ft_memset(&b[0] ,c, len);
-    while (b[i])
-    {
-        printf("%c ", b[i]);
-        i++;
-    }
 }

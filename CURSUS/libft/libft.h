@@ -1,29 +1,37 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: omerozsipahi <omerozsipahi@student.42.f    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/22 16:14:02 by omerozsipah       #+#    #+#             */
+/*   Updated: 2024/10/22 17:14:34 by omerozsipah      ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef LIBFT_H
 #define LIBFT_H
 
-#include <stdio.h>
-#include <unistd.h>
-#include <stdlib.h>
+#include <__stddef_size_t.h>
+#include <stddef.h>
 
-void	ft_putchar(char c);
 void    *ft_memset(void *b, int c, size_t len);
 void    *ft_bzero(void *b, size_t len);
-int	ft_strlen(char *str);
-int ft_strcmp(char *s1, char *s2);
-int ft_strncmp(char *s1, char *s2, unsigned int n);
+void    *ft_memcpy(void *restrict dst, const void * restrict src, size_t n);
+void    *ft_memmove(void *dst, const void *src, size_t len);
+size_t	ft_strlen(const char *s);
+int ft_strncmp(const char *s1, const char *s2, size_t n);
 int ft_atoi(char *str);
 int	ft_isalpha(int c);
 int	ft_isdigit(int c);
 int	ft_isalnum(int c);
 int	ft_isascii(int c);
 int ft_isprint(int c);
-char    *ft_strchr(const char *str, int a);
-char    *ft_strrchr(const char *str, int a);
-char    *ft_strcat(char *dest, char *src);
-char    *ft_strncat(char *dest, char *src, unsigned int n);
-char    *ft_strlcat(char *dest, char *src, unsigned int destsize);
-char    *ft_strcpy(char *dest, char *src);
-char    *ft_strncpy(char *dest, char *src, unsigned int n);
-char    *ft_strdup(char *str);
-char    *ft_strstr(char *str, char *dest);
+int ft_tolower(int c);
+int ft_toupper(int c);
+char    *ft_strchr(const char *s, int c);
+char    *ft_strrchr(const char *s, int c);
+char    *ft_strlcat(char *dest, const char *src, size_t len);
+char    *ft_strdup(const char *s1);
 #endif

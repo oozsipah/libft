@@ -1,33 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oozsipah <oozsipah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 16:13:59 by omerozsipah       #+#    #+#             */
-/*   Updated: 2024/10/23 02:24:47 by oozsipah         ###   ########.fr       */
+/*   Created: 2024/10/23 03:00:43 by oozsipah          #+#    #+#             */
+/*   Updated: 2024/10/23 03:20:13 by oozsipah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include <sys/_types/_size_t.h>
 #include <sys/_types/_null.h>
-size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
-{
-	size_t	dst_len;
-	size_t	i;
 
-	dst_len = ft_strlen(dst);
-	i = 0;
-	while ((dst_len + i + 1) < dstsize && src[i])
-	{
-		dst[dst_len + i] = src[i];
-		i++;
-	}
-	if (dst_len != dstsize)
-	{
-		dst[dst_len + i] = '\0';
-	}
-	return (dst_len + ft_strlen(src));
+int ft_memcmp(const void *s1, const void *s2, size_t n)
+{
+    size_t i;
+    unsigned char *one;
+    unsigned char *two;
+    
+    one = (unsigned char *)s1;
+    two = (unsigned char *)s2;
+    
+    i = 0;
+    while ((one[i] || two[i]) && i < n)
+    {
+        if (one[i] != two[i])
+            return (one[i] - two[i]);
+        i++;
+    }
+    return (0);
 }

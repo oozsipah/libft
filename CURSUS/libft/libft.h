@@ -3,24 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: omerozsipahi <omerozsipahi@student.42.f    +#+  +:+       +#+        */
+/*   By: oozsipah <oozsipah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 16:14:02 by omerozsipah       #+#    #+#             */
-/*   Updated: 2024/10/22 17:14:34 by omerozsipah      ###   ########.fr       */
+/*   Updated: 2024/10/23 04:31:07 by oozsipah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 #define LIBFT_H
 
-#include <__stddef_size_t.h>
-#include <stddef.h>
+#include <sys/_types/_size_t.h>
 
+void    *ft_calloc(size_t count, size_t size);
+void    *ft_memchr(const void *s, int c, size_t n);
 void    *ft_memset(void *b, int c, size_t len);
 void    *ft_bzero(void *b, size_t len);
 void    *ft_memcpy(void *restrict dst, const void * restrict src, size_t n);
 void    *ft_memmove(void *dst, const void *src, size_t len);
-size_t	ft_strlen(const char *s);
+int ft_memcmp(const void *s1, const void *s2, size_t n);
 int ft_strncmp(const char *s1, const char *s2, size_t n);
 int ft_atoi(char *str);
 int	ft_isalpha(int c);
@@ -32,6 +33,10 @@ int ft_tolower(int c);
 int ft_toupper(int c);
 char    *ft_strchr(const char *s, int c);
 char    *ft_strrchr(const char *s, int c);
-char    *ft_strlcat(char *dest, const char *src, size_t len);
 char    *ft_strdup(const char *s1);
+char    *ft_strnstr(const char *haystack, const char *needle, size_t n);
+size_t	ft_strlen(const char *s);
+size_t    ft_strlcat(char *dst, const char *src, size_t dstsize);
+size_t  ft_strlcpy(char *dst, const char *src, size_t dstsize);
+
 #endif

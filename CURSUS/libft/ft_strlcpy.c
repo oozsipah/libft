@@ -1,33 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oozsipah <oozsipah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 16:13:59 by omerozsipah       #+#    #+#             */
-/*   Updated: 2024/10/23 02:24:47 by oozsipah         ###   ########.fr       */
+/*   Created: 2024/10/23 02:26:44 by oozsipah          #+#    #+#             */
+/*   Updated: 2024/10/23 02:41:33 by oozsipah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 #include <sys/_types/_size_t.h>
-#include <sys/_types/_null.h>
-size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
-{
-	size_t	dst_len;
-	size_t	i;
+#include "libft.h"
 
-	dst_len = ft_strlen(dst);
-	i = 0;
-	while ((dst_len + i + 1) < dstsize && src[i])
-	{
-		dst[dst_len + i] = src[i];
-		i++;
-	}
-	if (dst_len != dstsize)
-	{
-		dst[dst_len + i] = '\0';
-	}
-	return (dst_len + ft_strlen(src));
+size_t  ft_strlcpy(char *dst, const char *src, size_t dstsize)
+{
+    size_t srclen;
+    size_t i;
+
+    i = 0;
+    srclen = ft_strlen(src);
+    if (srclen < dstsize)
+    {
+        while (src[i])
+        {
+            dst[i] = src[i];
+            i++;
+        }
+    }
+    else if (dstsize)
+    {
+        ft_memcpy(dst, src, dstsize - 1);
+        dst[dstsize - 1] = '\0';
+    }
+    return (srclen);
 }

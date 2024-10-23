@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: omerozsipahi <omerozsipahi@student.42.f    +#+  +:+       +#+        */
+/*   By: oozsipah <oozsipah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:17:11 by omerozsipah       #+#    #+#             */
-/*   Updated: 2024/10/22 17:39:56 by omerozsipah      ###   ########.fr       */
+/*   Updated: 2024/10/23 01:23:42 by oozsipah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <__stddef_size_t.h>
-#include <__stddef_null.h>
+#include <sys/_types/_size_t.h>
+#include <sys/_types/_null.h>
 #include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)

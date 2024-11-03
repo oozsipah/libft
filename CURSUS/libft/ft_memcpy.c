@@ -23,14 +23,20 @@ void    *ft_memcpy(void *dst, const void *src, size_t n)
     i = 0;
     s = (char *)src;
     d = (char *)dst;
-    if (!dst && !src)
-        return (0);
-    
-    while (i <= n)
+    if (!src)
+        return (NULL);
+    while (i < n)
     {
         d[i] = s[i];
         i++;
     }
+    return (d);
+}
 
-    return (dst);
+int	main()
+{
+	char *src = "omer ozsipahi";
+	char *dst;
+	
+	printf("%s\n", (char *)ft_memcpy(dst, src, 7));
 }

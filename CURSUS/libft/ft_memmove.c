@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oozsipah <oozsipah@student.42.fr>          +#+  +:+       +#+        */
+/*   By: omerozsipahi <omerozsipahi@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:17:11 by omerozsipah       #+#    #+#             */
-/*   Updated: 2024/10/23 01:23:42 by oozsipah         ###   ########.fr       */
+/*   Updated: 2024/10/27 12:07:28 by omerozsipah      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,24 +37,19 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
     }
     return (d);
 }
-/*
+#include <stdio.h>
+#include <string.h>
+
 int main(void)
 {
     char str[] = "Mert Ozcan";
 
-    char *ft_memm;
     char *memm;
-    // char *ft_memc;
-    // char *memc;
+    char *memc;
 
-    ft_memm = ft_memmove(str + 4, str, 4);
-    memm = memmove(str + 4, str, 4);
-    // ft_memc = ft_memcpy(str + 4, str, 4);
-    // memc = memcpy(str + 4, str, 4);
+    memm = memmove(str + 2, str, 4);
+    memc = memcpy(str + 2, str, 4);
 
-    printf("ft_memmove: %s\n", ft_memm);
     printf("memmove: %s\n", memm);
-    // printf("ft_memcpy: %s\n", ft_memc);
-    // printf("memcpy: %s\n", memc);
+    printf("memcpy: %s\n", memc);
 }
-*/

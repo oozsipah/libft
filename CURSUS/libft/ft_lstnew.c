@@ -1,31 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oozsipah < oozsipah@student.42kocaeli.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/21 23:54:18 by omerozsipah       #+#    #+#             */
-/*   Updated: 2024/10/29 14:53:05 by oozsipah         ###   ########.fr       */
+/*   Created: 2024/11/02 22:39:38 by oozsipah          #+#    #+#             */
+/*   Updated: 2024/11/02 23:48:36 by oozsipah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <sys/_types/_null.h>
-
-char    *ft_strrchr(const char *s, int c)
+#include <stdlib.h>
+t_list  *ft_lstnew(void  *content)
 {
-    char    *tmp;
-    size_t  i;
+    t_list  *node;
+    node = malloc(sizeof(t_list));
+    if(!node)
+        return (NULL);
 
-    tmp = NULL;
-    while (s[i])
-    {
-        if (s[i] == (unsigned char)c)
-            tmp = (char *)&s[i];
-        i++;
-    }
-    if (s[i] == (unsigned char)c)
-        tmp = (char *)&s[i];
-    return (tmp);
+    node->content = content;
+    node->next = NULL;
+
+    return (node);
 }

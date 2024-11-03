@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oozsipah <oozsipah@student.42.fr>          +#+  +:+       +#+        */
+/*   By: oozsipah < oozsipah@student.42kocaeli.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 16:14:02 by omerozsipah       #+#    #+#             */
-/*   Updated: 2024/10/23 04:31:07 by oozsipah         ###   ########.fr       */
+/*   Updated: 2024/11/02 22:59:01 by oozsipah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,12 @@
 #define LIBFT_H
 
 #include <sys/_types/_size_t.h>
-
+typedef struct s_list
+{
+    void    *content;
+    struct s_list *next;
+}   t_list;
+t_list  *ft_lstnew(void  *content);
 void    *ft_calloc(size_t count, size_t size);
 void    *ft_memchr(const void *s, int c, size_t n);
 void    *ft_memset(void *b, int c, size_t len);

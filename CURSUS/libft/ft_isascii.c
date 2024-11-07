@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: omerozsipahi <omerozsipahi@student.42.f    +#+  +:+       +#+        */
+/*   By: oozsipah <oozsipah@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:25:56 by omerozsipah       #+#    #+#             */
-/*   Updated: 2024/10/22 17:25:59 by omerozsipah      ###   ########.fr       */
+/*   Updated: 2024/11/07 04:09:25 by oozsipah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

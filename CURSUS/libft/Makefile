@@ -19,11 +19,9 @@ INC = libft.h
 MAIN = main.o
 
 all: $(NAME)
-	@$(CC) $(FLAGS) $(MAIN) $(NAME) -o main
 	@echo "compile completed."
 $(NAME):$(OBJ)
 	@ar -rcs $(NAME) $(OBJ)
-	@ranlib $(NAME)
 
 fclean: clean
 	@rm -rf main

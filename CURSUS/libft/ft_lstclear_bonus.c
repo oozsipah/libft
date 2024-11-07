@@ -1,28 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oozsipah <oozsipah@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/22 17:17:03 by omerozsipah       #+#    #+#             */
-/*   Updated: 2024/11/07 06:21:05 by oozsipah         ###   ########.fr       */
+/*   Created: 2024/11/06 07:16:24 by oozsipah          #+#    #+#             */
+/*   Updated: 2024/11/06 07:17:19 by oozsipah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void    *ft_memset(void *b, int c, size_t len)
-{
-    size_t i;
-    unsigned char *a;
-
-    a = (unsigned char *) b;
-    i = 0;
-    while ((i < len))
-    {
-        a[i] = (unsigned char) c;
-        i++;
-    }
-    return (a);
-}

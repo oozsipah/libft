@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: omerozsipahi <omerozsipahi@student.42.f    +#+  +:+       +#+        */
+/*   By: oozsipah <oozsipah@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:26:17 by omerozsipah       #+#    #+#             */
-/*   Updated: 2024/10/22 17:27:24 by omerozsipah      ###   ########.fr       */
+/*   Updated: 2024/11/07 04:09:34 by oozsipah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

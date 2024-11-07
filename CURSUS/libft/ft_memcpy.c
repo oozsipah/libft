@@ -3,16 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: oozsipah <oozsipah@student.42.fr>          +#+  +:+       +#+        */
+/*   By: oozsipah <oozsipah@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 01:43:48 by oozsipah          #+#    #+#             */
-/*   Updated: 2024/10/23 01:43:49 by oozsipah         ###   ########.fr       */
+/*   Updated: 2024/11/07 04:03:23 by oozsipah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 void    *ft_memcpy(void *dst, const void *src, size_t n)
 {
@@ -23,20 +21,13 @@ void    *ft_memcpy(void *dst, const void *src, size_t n)
     i = 0;
     s = (char *)src;
     d = (char *)dst;
-    if (!src)
-        return (NULL);
+    if (!dst && !src)
+        return (0);
+    
     while (i < n)
     {
         d[i] = s[i];
         i++;
     }
     return (d);
-}
-
-int	main()
-{
-	char *src = "omer ozsipahi";
-	char *dst;
-	
-	printf("%s\n", (char *)ft_memcpy(dst, src, 7));
 }

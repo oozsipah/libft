@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: omerozsipahi <omerozsipahi@student.42.f    +#+  +:+       +#+        */
+/*   By: oozsipah <oozsipah@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:19:53 by omerozsipah       #+#    #+#             */
-/*   Updated: 2024/10/22 17:22:57 by omerozsipah      ###   ########.fr       */
+/*   Updated: 2024/11/07 04:09:26 by oozsipah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 int	ft_isdigit(int c)
 {

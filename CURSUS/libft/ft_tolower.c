@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: omerozsipahi <omerozsipahi@student.42.f    +#+  +:+       +#+        */
+/*   By: oozsipah <oozsipah@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/21 23:37:24 by omerozsipah       #+#    #+#             */
-/*   Updated: 2024/10/21 23:37:27 by omerozsipah      ###   ########.fr       */
+/*   Updated: 2024/11/07 04:10:29 by oozsipah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int ft_tolower(int c)
-{
-    return (c + 32);
+{   
+	if (c >= 'A' && c <= 'Z')
+		return (c + 32);
+	return c;
 }

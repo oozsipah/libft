@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: omerozsipahi <omerozsipahi@student.42.f    +#+  +:+       +#+        */
+/*   By: oozsipah <oozsipah@student.42kocaeli.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:19:49 by omerozsipah       #+#    #+#             */
-/*   Updated: 2024/10/22 17:19:50 by omerozsipah      ###   ########.fr       */
+/*   Updated: 2024/11/07 04:09:23 by oozsipah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 int ft_isprint(int c)
 {
